@@ -1,0 +1,121 @@
+/* main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: system-ui
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem
+}
+
+section img{
+    max-width: 320px
+    height: auto;
+} */
+
+main {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #1f1f1f, #292929);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+  text-align: center;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  color: #00fff7;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00fff7;
+}
+
+main p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #d1d1d1;
+  padding: 0 10px;
+  line-height: 1.6;
+}
+
+main img {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+main img:hover {
+  transform: scale(1.03);
+}
+
+
+.futuristic-button {
+    position: relative;
+    padding: 15px 40px;
+    color:rgb(3, 255, 242);
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #00fff7;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 0.3s ease, color 0.3s ease;
+    box-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7 inset;
+  }
+  
+  .futuristic-button::before,
+  .futuristic-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg, #00fff7, #00c3ff, #00fff7);
+    z-index: -1;
+    filter: blur(10px);
+    opacity: 0.6;
+    animation: pulse 2s infinite alternate;
+  }
+  
+  .futuristic-button::after {
+    animation-delay: 1s;
+  }
+  
+  .futuristic-button:hover {
+    background: #00fff7;
+    color: #0f0f0f;
+    box-shadow: 0 0 30px #00fff7, 0 0 40px #00fff7 inset;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+    100% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(11, 45, 46); /* verde oscuro */
+    height: 100%;
+  }
+  
